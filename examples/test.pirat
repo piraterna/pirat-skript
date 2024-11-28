@@ -1,4 +1,8 @@
-let test = [123, 456, 789]
-invoke $echo("Test: {test}")
-invoke $echo("Args: {argv[]}")
-invoke $echo("Test[0]: {test[0]}")
+# Built in variables:
+#   - argv (list)
+#   - _version
+#   - _host
+
+invoke print("Args: {argv[]}")
+invoke print("Version: {_version}")
+invoke print("Host: {_host}")
