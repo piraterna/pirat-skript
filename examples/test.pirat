@@ -3,6 +3,19 @@
 #   - _version
 #   - _host
 
-invoke print("Args: {argv[]}")
-invoke print("Version: {_version}")
-invoke print("Host: {_host}")
+
+# Invoke built-in python functions:
+invoke print("Ahoy!")
+
+# Invoke system commands:
+invoke $echo("Ahoy to you! Here is my files:")
+invoke $ls
+
+# Define variables:
+let name = Kevin
+
+# Use variables in args:
+invoke print("Ahoy {name}")
+
+# Use system ENV variables in args:
+invoke print("User: {$USER}")
