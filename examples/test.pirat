@@ -1,0 +1,4 @@
+let test = [123, 456, 789]
+invoke $echo("Test: {test}")
+invoke $echo("Args: {argv[]}")
+invoke $echo("Test[0]: {test[0]}")
